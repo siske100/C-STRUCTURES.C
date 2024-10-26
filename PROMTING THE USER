@@ -1,0 +1,31 @@
+#include<stdio.h> //scanf(),printf()
+#include<string.h> //strcopy
+struct book{
+	char title[30];
+	char author[30];
+	char ISBN[13];
+	int publicationyear;
+	float price; 
+} book1,book2;
+
+int main(){
+	//struct book1;book2;
+	printf("Enter the title");
+	scanf("%s",&book1.title);
+	printf("Enter the author");
+	scanf("%s",&book1.author);
+	printf("Enter the ISBN");
+	scanf("%s",&book1.ISBN);
+	printf("Enter the publicationyear");
+	scanf("%d",book1.publicationyear);
+	printf("Enter the price");
+	scanf("%f",&book1.price); 
+
+printf("Title:%s\n",book1.title);
+printf("Author:%s\n",book1.author);
+printf("ISBN:%s\n",book1.ISBN); 
+printf("Publicationyear:%d\n",book1.publicationyear);
+printf("Price:%f\n",book1.price);
+
+return 0;
+}
